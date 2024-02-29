@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -444,7 +446,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -494,7 +496,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -544,15 +546,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+*{
+  font-family: 'Inter';
+  /* font-family: "TT Hoves Pro Trial"; */
+  /* font-family: "Liga Sans"; */
 }
 
-.font-bold {
-  font-weight: 700;
+.linear{
+  background-image: url(assets/linear.png) !important;
+  background-position: center;
+  background-size: cover;
 }
 
-.underline {
-  text-decoration-line: underline;
+.focus-border:focus{
+  outline: 3px solid #6936f518 !important;
 }
