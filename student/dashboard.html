@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../src/input.css">
+    <title>Student Signup</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+<button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+    <span class="sr-only">Open sidebar</span>
+    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+    </svg>
+ </button>
+ 
+ <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    <div class="h-full px-3 py-4 overflow-y-auto bg-[#f9fafc17] border border-l-1">
+       <a href="#" class="flex items-center ps-2.5 mb-5">
+          <img src="/src/assets/Logo1.svg" class="h-6 me-3 sm:h-7" alt="Flowbite Logo" />
+       </a>
+       <ul class="space-y-3 font-medium">
+            <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg bg-[#6936f5] linear">
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M17.1142 2.33337H15.3725C13.3742 2.33337 12.32 3.38754 12.32 5.38587V7.12754C12.32 9.12587 13.3742 10.18 15.3725 10.18H17.1142C19.1125 10.18 20.1667 9.12587 20.1667 7.12754V5.38587C20.1667 3.38754 19.1125 2.33337 17.1142 2.33337Z" fill="#fff"/>
+                        <path opacity="0.4" d="M6.63666 12.8108H4.895C2.8875 12.8108 1.83333 13.865 1.83333 15.8633V17.605C1.83333 19.6125 2.8875 20.6666 4.88583 20.6666H6.6275C8.62583 20.6666 9.68 19.6125 9.68 17.6141V15.8725C9.68917 13.865 8.635 12.8108 6.63666 12.8108Z" fill="#fff"/>
+                        <path d="M5.76583 10.1984C7.93769 10.1984 9.69833 8.43773 9.69833 6.26587C9.69833 4.09401 7.93769 2.33337 5.76583 2.33337C3.59397 2.33337 1.83333 4.09401 1.83333 6.26587C1.83333 8.43773 3.59397 10.1984 5.76583 10.1984Z" fill="#fff"/>
+                        <path d="M16.2342 20.6666C18.406 20.6666 20.1667 18.906 20.1667 16.7341C20.1667 14.5623 18.406 12.8016 16.2342 12.8016C14.0623 12.8016 12.3017 14.5623 12.3017 16.7341C12.3017 18.906 14.0623 20.6666 16.2342 20.6666Z" fill="#fff"/>
+                    </svg>                    
+                    <span class="ms-3 text-white">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-[#141a1409]">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M12 22.51C17.5228 22.51 22 18.0329 22 12.51C22 6.98716 17.5228 2.51001 12 2.51001C6.47715 2.51001 2 6.98716 2 12.51C2 18.0329 6.47715 22.51 12 22.51Z" fill="#8D96AC"/>
+                        <path d="M12 7.43994C9.93 7.43994 8.25 9.11994 8.25 11.1899C8.25 13.2199 9.84 14.8699 11.95 14.9299C11.98 14.9299 12.02 14.9299 12.04 14.9299C12.06 14.9299 12.09 14.9299 12.11 14.9299C12.12 14.9299 12.13 14.9299 12.13 14.9299C14.15 14.8599 15.74 13.2199 15.75 11.1899C15.75 9.11994 14.07 7.43994 12 7.43994Z" fill="#8D96AC"/>
+                        <path d="M18.78 19.86C17 21.5 14.62 22.51 12 22.51C9.38 22.51 7 21.5 5.22 19.86C5.46 18.95 6.11 18.12 7.06 17.48C9.79 15.66 14.23 15.66 16.94 17.48C17.9 18.12 18.54 18.95 18.78 19.86Z" fill="#8D96AC"/>
+                    </svg>                                           
+                    <span class="ms-3 text-[#141A14]">Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-[#141a1400]">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" fill="#8D96AC"/>
+                        <path d="M16.03 11.9699L13.03 8.96994C12.74 8.67994 12.26 8.67994 11.97 8.96994C11.68 9.25994 11.68 9.73994 11.97 10.0299L13.69 11.7499H8.5C8.09 11.7499 7.75 12.0899 7.75 12.4999C7.75 12.9099 8.09 13.2499 8.5 13.2499H13.69L11.97 14.9699C11.68 15.2599 11.68 15.7399 11.97 16.0299C12.12 16.1799 12.31 16.2499 12.5 16.2499C12.69 16.2499 12.88 16.1799 13.03 16.0299L16.03 13.0299C16.32 12.7399 16.32 12.2599 16.03 11.9699Z" fill="#8D96AC"/>
+                    </svg>                                                                 
+                    <span class="ms-3 text-[#141A14]">Log out</span>
+                </a>
+            </li>
+       </ul>
+    </div>
+ </aside>
+ 
+ <div class="p-4 sm:ml-64">
+    
+ </div>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>

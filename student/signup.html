@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../src/input.css">
-    <title>Student Login</title>
+    <title>Student Signup</title>
 </head>
 <body>
 	<div class="container flex h-screen">
@@ -15,11 +15,19 @@
 		<div class="w-full flex flex-col justify-center lg:ml-auto md:px-24 h-full lg:w-1/2 py-4">
 			<div class="details p-6 md:p-0">
 				<img src="/src/assets/Logo1.svg" alt="Logo" class="mt-4 mb-8 block lg:hidden">
-				<h1 class="text-[34.9px] font-semibold tracking-tight mb-2 text-3xl">Login</h1>
-				<p class="text-[13.29px] text-sm text-[#808080]">Enter your login details to enter your dashboard.</p>
+				<h1 class="text-[34.9px] font-semibold tracking-tight mb-2 text-3xl">SignUp</h1>
+				<p class="text-[13.29px] text-sm text-[#808080]">Submit your details to get you started.</p>
 
 				<!-- Form -->
 				<div>
+								
+					<label for="surname" class="block mt-4 mb-2 font-semibold text-black text-base">Surname
+					</label>
+					<input type="name" id="surname" class="border text-sm rounded-md block w-full p-2.5 py-3 focus:border-[#6936f5] focus-border" placeholder="Enter Surname Name">
+
+					<label for="first-name" class="block mt-4 mb-2 font-semibold text-black text-base">First Name</label>
+					<input type="name" id="first-name" class="border text-sm rounded-md block w-full p-2.5 py-3 focus:border-[#6936f5] focus-border" placeholder="Enter First Name">
+
 					<label for="email" class="block mt-4 mb-2 font-semibold text-black text-base">Email</label>
 					<input type="email" id="email" class="border text-sm rounded-md block w-full p-2.5 py-3 focus:border-[#6936f5] focus-border" placeholder="Enter Email">
 
