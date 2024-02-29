@@ -12,21 +12,28 @@
 		<div class="hidden lg:block lg:w-1/2 h-full bg- fixed">
             <img src="../src/assets/left-image.png" alt="Left-Image" class="w-full h-full object-cover">
 		</div>
-		<div class="w-full flex flex-col justify-center lg:ml-auto md:px-24 h-full lg:w-1/2 py-4">
-			<div class="details p-6 md:p-0">
+		<div class="w-full flex flex-col my-12 justify-center lg:ml-auto md:px-24 h-full lg:w-1/2 py-4">
+			<div class="details p-6 md:p-0 mb-12">
 				<img src="/src/assets/Logo1.svg" alt="Logo" class="mt-4 mb-8 block lg:hidden">
 				<h1 class="text-[34.9px] font-semibold tracking-tight mb-2 text-3xl">SignUp</h1>
 				<p class="text-[13.29px] text-sm text-[#808080]">Submit your details to get you started.</p>
 
 				<!-- Form -->
-				<div>
-								
+				<div>			
 					<label for="surname" class="block mt-4 mb-2 font-semibold text-black text-base">Surname
 					</label>
 					<input type="name" id="surname" class="border text-sm rounded-md block w-full p-2.5 py-3 focus:border-[#6936f5] focus-border" placeholder="Enter Surname Name">
 
 					<label for="first-name" class="block mt-4 mb-2 font-semibold text-black text-base">First Name</label>
 					<input type="name" id="first-name" class="border text-sm rounded-md block w-full p-2.5 py-3 focus:border-[#6936f5] focus-border" placeholder="Enter First Name">
+
+					<label for="choose-department" class="block mt-4 mb-2 font-semibold text-black text-base">Choose Department</label>
+					<select name="choose_department" id="choose-department" class="border text-sm rounded-md block w-full p-2.5 py-3 focus:border-[#6936f5] focus-border">
+						<option value="0">Select Department</option>
+						<option value="1">Computer Science</option>
+						<option value="2">Computer Engineering</option>
+					</select>
+					<!-- <input type="sel" id="first-name" class="border text-sm rounded-md block w-full p-2.5 py-3 focus:border-[#6936f5] focus-border" placeholder="Enter First Name"> -->
 
 					<label for="email" class="block mt-4 mb-2 font-semibold text-black text-base">Email</label>
 					<input type="email" id="email" class="border text-sm rounded-md block w-full p-2.5 py-3 focus:border-[#6936f5] focus-border" placeholder="Enter Email">
