@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../src/input.css">
+    <title>Student Login</title>
+</head>
+<body>
+	<div class="container flex h-screen">
+		<div class="hidden lg:block lg:w-1/2 h-full bg- fixed">
+                <img src="../src/assets/left-image.png" alt="Left-Image" class="w-full h-full object-cover">
+		</div>
+		<div class="w-full flex flex-col justify-center lg:ml-auto md:px-24 h-full lg:w-1/2 py-4 md:bg-black login-mobile-bg">
+			<div class="details p-6 md:p-0">
+				<img src="/src/assets/Logo1.svg" alt="Logo" class="mt-4 mb-8 block lg:hidden">
+				<h1 class="text-[34.9px] font-semibold tracking-tight mb-2 text-3xl text-white">Admin Login</h1>
+				<p class="text-[13.29px] text-sm text-[#808080]">Enter your login details to enter your dashboard.</p>
+
+				<!-- Form -->
+				<div>
+					<label for="email" class="block mt-4 mb-2 font-semibold text-white text-base">Email</label>
+					<input type="email" id="email" class="border text-sm rounded-md block w-full p-2.5 py-3 focus:border-[#6936f5] focus-border bg-black" placeholder="Enter Email">
+
+					<label for="password" class="block mt-4 mb-2 font-semibold text-white text-base">Password</label>
+					<input type="password" id="password" class="border text-sm rounded-md block w-full p-2.5 py-3 focus:border-[#6936f5] focus-border bg-black" placeholder="Min. of 8 characters">
+
+					<a href="welcome.html" class="my-5 block text-center bg-[#6936f5] linear rounded-lg p-3 text-base text-white font-medium">Register</a>
+
+					<p class="text-center text-[13.29px] text-white">Don't have an account yet? 
+						<a href="signup.html" class="text-[#6936f5] font-semibold">
+							Sign up
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

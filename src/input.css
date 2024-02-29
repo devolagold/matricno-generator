@@ -6,7 +6,6 @@
 
 *{
     box-sizing: border-box;
-    /* font-family: "TT Hoves Pro Trial"; */
     font-family: "Inter";
 }
 
@@ -18,4 +17,10 @@
 
 .focus-border:focus{
     outline: 3px solid #6936f518 !important;
+}
+
+.login-mobile-bg{
+    background-image: url(assets/login-mobile-bg.jpg) !important;
+    background-position: center;
+    background-size: cover;
 }
