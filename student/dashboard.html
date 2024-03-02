@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../src/input.css">
+    <link rel="icon" type="image/svg" href="../src/assets/favicon.svg"/>
     <title>Student Dashboard</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 </head>
@@ -52,13 +53,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-md hover:bg-[#141a1409]">
+                    <a href="student-settings.html" class="flex items-center p-2 text-gray-900 rounded-md hover:bg-[#141a1409]">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4" d="M12 22.51C17.5228 22.51 22 18.0329 22 12.51C22 6.98716 17.5228 2.51001 12 2.51001C6.47715 2.51001 2 6.98716 2 12.51C2 18.0329 6.47715 22.51 12 22.51Z" fill="#8D96AC"/>
-                            <path d="M12 7.43994C9.93 7.43994 8.25 9.11994 8.25 11.1899C8.25 13.2199 9.84 14.8699 11.95 14.9299C11.98 14.9299 12.02 14.9299 12.04 14.9299C12.06 14.9299 12.09 14.9299 12.11 14.9299C12.12 14.9299 12.13 14.9299 12.13 14.9299C14.15 14.8599 15.74 13.2199 15.75 11.1899C15.75 9.11994 14.07 7.43994 12 7.43994Z" fill="#8D96AC"/>
-                            <path d="M18.78 19.86C17 21.5 14.62 22.51 12 22.51C9.38 22.51 7 21.5 5.22 19.86C5.46 18.95 6.11 18.12 7.06 17.48C9.79 15.66 14.23 15.66 16.94 17.48C17.9 18.12 18.54 18.95 18.78 19.86Z" fill="#8D96AC"/>
-                        </svg>                                           
-                        <span class="ms-3 text-[#141A14]">Profile</span>
+                            <path d="M12 12.5C14.7614 12.5 17 10.2614 17 7.5C17 4.73858 14.7614 2.5 12 2.5C9.23858 2.5 7 4.73858 7 7.5C7 10.2614 9.23858 12.5 12 12.5Z" fill="#8D96AC"/>
+                            <path opacity="0.4" d="M12 15C6.99 15 2.90997 18.36 2.90997 22.5C2.90997 22.78 3.12997 23 3.40997 23H20.59C20.87 23 21.09 22.78 21.09 22.5C21.09 18.36 17.01 15 12 15Z" fill="#8D96AC"/>
+                            <path d="M21.43 15.2401C20.53 14.3401 19.82 14.6301 19.21 15.2401L15.67 18.7801C15.53 18.9201 15.4 19.1801 15.37 19.3701L15.18 20.7201C15.11 21.2101 15.45 21.5501 15.94 21.4801L17.29 21.2901C17.48 21.2601 17.75 21.1301 17.88 20.9901L21.42 17.4501C22.04 16.8501 22.33 16.1401 21.43 15.2401Z" fill="#8D96AC"/>
+                        </svg>
+                        <span class="ms-3 text-[#141A14]">Student Settings</span>
                     </a>
                 </li>
                 <li>
@@ -92,13 +93,37 @@
         <hr>
 
         <div class="flex flex-col w-full items-left p-4">
-            <div class="flex flex-col space-y-4">
-                <p>Your matric number is: 
-                    <br>
-                    <span class="text-6xl font-bold">
-                        19/69/0101
-                    </span>
-                </p>
+            <div class="flex flex-col items-start space-x-0 space-y-3 justify-start rounded-lg border shadw-sm p-3 mb-5 md:flex-row md:space-x-8 md:items-center md:space-y-0">
+                <img src="../src/assets/Number=7.jpg" alt="" class="rounded-full w-36 self-center">
+                <div class="space-y-3">
+                    <div class="flex flex-col space-y-1">
+                        <p class="text-sm text-[#141a14a2]">Student Name:</p>
+                        <h1 class="text-[#141A14] text-xl font-semibold">Afolabi Olamilekan</h1>
+                    </div>
+    
+                    <div class="flex flex-col space-y-1">
+                        <p class="text-sm text-[#141a14a2]">Email:</p>
+                        <h1 class="text-[#141A14] text-xl font-semibold">olagoldlanre@gmail.com</h1>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="flex flex-col space-y-1">
+                        <p class="text-sm text-[#141a14a2]">Programme:</p>
+                        <h1 class="text-[#141A14] text-xl font-semibold">Computer Science</h1>
+                    </div>
+    
+                    <div class="flex flex-col space-y-1">
+                        <p class="text-sm text-[#141a14a2]">Status:</p>
+                        <h1 class="text-[#141A14] text-xl font-semibold">Verified Student</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col space-y- mt-6">
+                <p class="md:text-xl font-medium tracking-tight">Your matric number is:</p>
+                <h1 class="text-[58px] font-bold tracking-tight ojuju md:text-8xl">
+                    19/69/0101
+                </h1>
             </div>
         </div>
     </div>

@@ -20,7 +20,7 @@
 }
 
 .focus-border:focus{
-    outline: 3px solid #6936f518 !important;
+    outline: 1px solid #6936f518 !important;
 }
 
 .admin-focus-border:focus{
