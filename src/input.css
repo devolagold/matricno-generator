@@ -19,6 +19,10 @@
     outline: 3px solid #6936f518 !important;
 }
 
+.admin-focus-border:focus{
+    outline: 3px solid #0D0D0D18 !important;
+}
+
 .login-mobile-bg{
     background-image: url(assets/login-mobile-bg.jpg) !important;
     background-position: center;
