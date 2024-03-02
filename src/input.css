@@ -9,6 +9,10 @@
     font-family: "Inter";
 }
 
+.ojuju{
+    font-family: 'Ojuju';
+}
+
 .linear{
     background-image: url(assets/linear.png) !important;
     background-position: center;
